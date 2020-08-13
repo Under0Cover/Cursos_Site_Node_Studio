@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabela</h1>
+    <!--Criando a Tabela-->
+    <table>
+        <!-- caption é o título da Tabela-->
+        <caption>Cadastro de Clientes</caption>
+        <!-- Criando um grupo de colunas, para formartar posteriormente-->
+        <colgroup>
+            <!-- Criando a classe do nome-->
+            <col class="nome">
+            <col class="e-mail">
+            <col class="telefone">
+            <col class="cargo">
+        </colgroup>
+        <!-- Como nossa tabela começa por um cabeçalho, chamamos essa tag de thead-->
+        <thead>
+            <!-- Como temos um cabeçalho, também temos o conteúdo, esse conteúdo, chamamos de tbody-->
+            <tbody>
+                <!-- tr é a linha-->
+                <tr>
+                    <!-- th é o título das colunas da tabela-->
+                    <!-- Essa th é a 1ª coluna-->
+                    <th>Nome:</th>
+                    <!-- Essa th é a 2ª coluna-->
+                    <th>E-mail:</th>
+                    <!-- Essa th é a 3ª coluna-->
+                    <th>Telefone:</th>
+                    <!-- Essa th foi adicionada para exemplificar o rowspan-->
+                    <th>Cargo:</th>
+                </tr>
+            </thead>
+            <!-- Essa tr é a 2ª linha-->
+            <tr>
+                <!-- Essa td preenche a 1ª coluna-->
+                <td>Paulo César</td>
+                <!-- Essa td preenche a 2ª coluna-->
+                <td>paulo_cesar_2020@hotmail.com</td>
+                <!-- Essa td preenche a 3ª coluna-->
+                <td>(34) 3 3313 - 3133</td>
+                <!-- Essa td preenche a 3ª coluna da 2ª, 3ª e 4ª colunas-->
+                <td rowspan="3">Desenvolvedor Web</td>
+            </tr>
+            <!-- Essa tr é a 3ª linha-->
+            <tr>
+                <!-- Essa td preenche a 1ª coluna-->
+                <td>Amanda Mesquita</td>
+                <!-- Essa td preenche a 2ª coluna-->
+                <td>amandinha.mesq@hotmail.com</td>
+                <!-- Essa td preenche a 3ª coluna-->
+                <td>(34) 3 3312 - 3233</td>
+            </tr>
+            <!-- Essa tr é a 4ª linha-->
+            <tr>
+                <!-- Essa td preenche a 1ª coluna-->
+                <td>Tales Oliver</td>
+                <!-- Essa td preenche a 2ª coluna-->
+                <td>talis.oliveira@hotmail.com.br</td>
+                <!-- Essa td preenche a 3ª coluna-->
+                <td>(34) 9 8864 - 6783</td>
+            </tr>
+        </tbody>
+        <!-- Como a 5ª linha, fecha o documento, chamamos ele de rodapé, com a tag tfoot-->
+        <tfoot>
+            <!-- Essa tr é a 5ª linha-->
+            <tr>
+                <!-- Essa td preenche todas as colunas, finalizando-->
+                <td colspan="4">Fim do Documento</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
