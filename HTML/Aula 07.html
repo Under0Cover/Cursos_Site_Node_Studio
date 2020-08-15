@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!-- criando o formulário-->
+    <!-- action é o parâmetro que vai receber o formulário -->
+    <!-- o method tem duas respostas -->
+    <!-- GET envia as informações via URL -->
+    <!-- POST envia as informações encapsuladas, sem que o visitante veja -->
+    <form action="cadastro.php" method="POST">
+    <!-- Se o method for GET, na barra de endereço irá aparecer o nome e a senha-->
+    <!-- form action="cadastro.php" method="GET">-->
+    <!-- Criando um campo de fieldset e legenda-->
+        <fieldset>
+            <legend>informações Pessoais</legend>
+                <!-- Usando o autocomplete, ele completa alguns nomes já salvo no dispositivo do usuário-->
+                <!-- Usando o placeholder o usuário tem um exemplo descrito no campo, que some com a digitação-->
+                Nome: <br> <input type="text" name="nome" autocomplete="on" placeholder="Seu nome aqui..."><br>
+                <!-- O required é usado quando o campo é obrigatório-->
+                <!-- O autofocus é usado quando você quer dar o foco da página no campo-->
+                <!-- O disabled é usado quando você quer o campo desabilitado-->
+                <!-- O maxlength é usado para dizer o máixmo de caracteres no campo-->
+                Senha: <br> <input type="password" name="senha" id="senha" placeholder="Digite sua senha"><br>
+                <!-- Usando o campo e-mail-->
+                E-mail: <br> <input type="email" name="e-mail" id="e-mail" autocomplete="on" placeholder="seuemail@provedor.com"><br>
+                <!-- Usando o radio que é o elemento que permite escolher 1 entre vários-->
+                Time: <br>
+                <!-- Dentro todas as opções de time, só uma pode ser escolhida-->
+                <input type="radio" name="time" id="vasco" value="vasco">Vasco <br>
+                <input type="radio" name="time" id="botafogo" value="botafogo">Botafogo <br>
+                <input type="radio" name="time" id="fluminense" value="fluminense">Fluminense <br>
+                <input type="radio" name="time" id="flamengo" value="flamengo">Flamengo <br>
+                <input type="radio" name="time" id="saoPaulo" value="saoPaulo">São Paulo <br>
+                <input type="radio" name="time" id="corinthians" value="corinthians">Corinthians <br>
+                <input type="radio" name="time" id="palmeiras" value="palmeiras">Palmeiras <br>
+                <input type="radio" name="time" id="santos" value="santos">Santos <br>
+                <input type="radio" name="time" id="atleticoMg" value="atleticoMg">Atlético Mineiro <br>
+                <input type="radio" name="time" id="cruzeiro" value="cruzeiro">Cruzeiro <br>
+                <input type="radio" name="time" id="gremio" value="gremio">Grêmio <br>
+                <input type="radio" name="time" id="internacional" value="internacional">Internacional <br>
+                <!-- Usando o checkbox o usuário pode escolher vários itens da lista-->
+                Cores: <br>
+                <!-- O checked é usado para deixar uma opção marcada-->
+                <!-- Pode ser ruim, pois o usuário pode não escolher e deixar a opção checked sem mudar-->
+                <!-- E pode atrapalhar dependendo do trabalho envolvido-->
+                <input type="checkbox" name="cores" id="verde" value="verde">Verde <br>
+                <input type="checkbox" name="cores" id="vermelho" value="vermelho">Vermelho <br>
+                <input type="checkbox" name="cores" id="azul" value="azul">Azul <br>
+                <input type="checkbox" name="cores" id="branco" value="branco">Branco <br>
+                <input type="checkbox" name="cores" id="preto" value="preto">Preto <br>
+                <input type="checkbox" name="cores" id="rosa" value="rosa">Rosa <br>
+                <!-- Usando o type="number" é possível determinar a quantidade escolhida-->
+                Quantidade: <br>
+                <input type="number" name="quantidade" id="quantidade" min="0" max="20"><br>
+                <!--O step determina os intervalos que podem ser escolhidos-->
+                <!-- <input type="number" name="quantidade" id="quantidade" min="0" max="20" step="2"-->
+                <!--Tipo de 2 em 2, 5 em 5, 10 em 10-->
+                <!-- Usando o range -->
+                <!-- Valores que podem ser escolhidos usando o slider (a barra lateral)-->
+                <input type="range" name="quantidadeSlider" id="quantidadeSlider" min="0" max="20"><br>
+                <!-- Usando o type="color"-->
+                <!-- color deixa o usuário escolher a cor na paleta de cores-->
+                <input type="color" name="cor" id="corEscolhida"><br>
+                <!-- Usando o type="file" pra receber um arquivo-->
+                <!-- A parte do armazenamento é feito pelo BackEnd-->
+                Currículo:<br>
+                <input type="file" name="curriculo" id="curriculo"><br>
+                <!-- Usando o type="hidden" muito usado para receber parâmetros do BackEnd-->
+                Input Escondido: <br>
+                <input type="hidden" name="escondido"><br>
+                <!-- Suando o type="url" para receber um endereço de site-->
+                URL: <br>
+                <input type="url" name="sitePessoal" id="sitePessoal">
+                <!-- Usando o type="search" para pesquisa-->
+                Pesquisa: <br>
+                <input type="search" name="pesquisa" id="pesquisa">
+                <!-- Usando o type="tel" para receber um número de telefone-->
+                Telefone: <br>
+                <input type="tel" name="telefone" id="telefone"><br>
+                <!--Usando o type="date" para selecionar uma data-->
+                Data: <br>
+                <!-- Os valores min e max podem ser passados para limite de escolha-->
+                <!-- Porém o professor do cuso deu um max de uma data aleatória -->
+                <!-- o max deveria ser colocada a data de hoje-->
+                <input type="date" name="data" id="data" min="1950-01-01"><br>
+                <!--Usando o type="hora" para selecionar uma hora-->
+                Hora de Nascimento: <br>
+                <input type="time" name="horaNascimento" id="horaNascimento"><br>
+                <!-- Usando o type="month" para selecionar um mês e ano-->
+                Mês e Ano: <br>
+                <input type="month" name="mesEAno" id="mesEAno"><br>
+                <!-- Usando o type="week" para selecionar uma semana-->
+                Semana: <br>
+                <input type="week" name="semana" id="semana"><br>
+                <!-- Usando o type="datetime-local" para selecionar a data e a hora-->
+                Data e Hora: <br>
+                <input type="datetime-local" name="dataEHora" id="dataEHora"><br>
+                <!-- Usando o textarea para mensagens-->
+                <!-- Usando rows para linhas e cols para colunuas (determinando o tamanho do campo de texto) -->
+                <!-- spellcheck é para ligar e desligar o corretor de conteúdo -->
+                Mensagem: <br>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                <!-- spellcheck como false, assim o corretor não funcionará -->
+                <!-- <textarea name="mensagemComSpeelcheckOn" id="mensagemComSpeelcheckOn" cols="30" rows="10" spellcheck="false"></textarea> -->
+                <!-- Usando o button para criar um botão -->
+                <!-- <button type="button">Clique</button> -->
+                <!-- A diferença do button para o input type="submit" -->
+                <!-- O button é um botão e tem que ter uma chamada de função do JavaScript-->
+                <!-- O input é um submit, ou seja, ele vai 'submitar' o formulário lá no action="cadastro.php" do começo do form-->
+                <!-- Usando o select-->
+                Escolha seu veículo: <br>
+                <select name="veiculos" id="veiculos">
+                    <!-- optgroup vai subseparar os seus itens -->
+                    <!-- Aqui no exemplo serão carros e motos -->
+                    <!-- Aqui o optgroup de carros -->
+                    <optgroup label="carros">
+                        <!-- Aqui vão as opções de carros -->
+                        <option value="camaro">Camaro</option>
+                        <option value="hilux">Hilux</option>
+                    </optgroup>
+                    <!-- Aqui o optgroup de motos -->
+                    <optgroup label="motos">
+                        <!-- Aqui vão as opções de motos -->
+                        <option value="pop100">POP 100</option>
+                        <option value="zig50">ZIG 50</option>
+                    </optgroup>
+                    <!-- Caso eu queira deixar um valor selecionado: -->
+                    <!-- Uso o 'selected' dentro da opção desejada -->
+                        <!-- <option value="zig50" selected>ZIG 50</option> -->
+                </select> <br>
+                <!-- Usando o datalist -->
+                Escolha um curso: <br>
+                <input name="cursos" list="listaCursos">
+                    <!-- Conectando o input no datalist com o id do datalist -->
+                    <!-- Opção de autocomplete ativada -->
+                    <datalist id="listaCursos">
+                        <!-- Opções -->
+                        <option value="HTML5">
+                        <option value="CSS3">
+                        <option value="JavaScript">
+                        <option value="PHP">
+                        <option value="Phyton">
+                    </datalist><br>
+                <!--Botão de enviar-->
+                <input type="submit" value="Enviar" name="botaoEnviar">
+        </fieldset>
+    </form>
+</body>
+</html>
