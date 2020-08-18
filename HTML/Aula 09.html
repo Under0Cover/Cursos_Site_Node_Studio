@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark e Contenteditable</title>
+    <link rel="stylesheet" href="style_aula_09.css">
+</head>
+<body>
+    <!-- Esse contenteditable válida a edição do texto -->
+    <!-- No exemplo, ele está dentro da DIV -->
+    <!-- Então toda a DIV pode ser editada -->
+    <!-- Incluíndo H1 e P -->
+    <!-- Se quiser cancelar em algum ponto o contenteditable é só colocar false -->
+    <div contenteditable="true">
+        <h1>Mark e Contenteditable</h1>
+        <!-- Usando o mark para dar uma marcação textual, como se fosse marca texto amarela -->
+        <p><mark>Lorem ipsum</mark> <!-- Claro que o mark aguenta CSS ;P -->dolor sit amet, consectetur adipiscing elit. Quisque interdum vestibulum leo. Nulla ultricies, eros eget laoreet cursus, lectus sapien tincidunt nisl, vitae finibus sem urna vitae nisi. Aenean elementum a elit et porta. Nulla elementum sapien at tortor commodo commodo vel vitae urna. Nulla ut nulla velit. Cras fringilla est non dui vestibulum interdum. Cras eget congue nibh, id tempor turpis. Praesent in nisi eros.</p>
+        <p>Vivamus nec tortor porta, volutpat quam blandit, bibendum nisl. In interdum ipsum non finibus tempus. Morbi sed eros vel urna cursus venenatis at euismod elit. Integer feugiat lorem vitae tincidunt sagittis. Curabitur quis velit et mi rutrum viverra a facilisis mi. Phasellus nulla metus, cursus vitae orci vel, fringilla gravida dolor. Nam odio urna, pellentesque ut egestas vitae, vestibulum quis urna. Duis dignissim, augue eget rutrum faucibus, sem elit mattis enim, quis egestas elit augue nec nisl. Aliquam erat volutpat.</p>
+    </div>
+</body>
+</html>
