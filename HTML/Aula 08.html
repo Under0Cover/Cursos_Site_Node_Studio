@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários II</title>
+</head>
+<body>
+    <!-- Quando o formulário vai enviar via method: -->
+    <!-- delcara o method no form-->
+    <!-- E declara o action que é o seu arquivo que irá receber o formulário -->
+    <!-- <form action="cadastrar.php" method="POST" enctype="apllication/x-www-form-unlercoded" name="formularioCadastro"> -->
+    <!-- Quando você quer dois botões e um deles envia por outro meio: -->
+    <!-- Você declara o formaction e indica o arquivo que vai receber a função de cada botão -->
+    <form id="formularioCadastro" method="POST" enctype="application/x-www-form-urlencoded" name="formularioCadastro">
+        E-mail: <br>
+        <input type="email" name="email" id="email" required>
+        <!-- Aqui entra o botão de cadastrar que vai enviar o formulário via POST -->
+        <input type="submit" value="Cadastrar" name="cadastrar" formaction="cadastrar.php">
+        <!-- Aqui entra o botão de cadastrar que vai enviar o formulário via E-mail -->
+        <input type="submit" value="Emviar por E-mail" name="enviarPorE-mail" formaction="enviarE-mail.php"> 
+        <!-- tanto o method e o enctype podem ser declarados no form ou em cada input -->
+        <!-- Caso não queira validação do formulário: -->
+        <!-- Use formnavalidade -->
+        <!-- Você pode direcionar o target do formulário: -->
+        <!-- formtarget="_blank"-->
+    </form>
+
+    <!-- Você pode colocar um input fora do form -->
+    <!-- E mesmo assim ele ainda estar associado ao form -->
+    <!-- no input, declara form e ele receber o id do form -->
+    <!-- <form id="umFormulario" (...)</form> -->
+    <!-- <input form="umFormulario" -->
+    Nome: <br>
+    <input type="text" name="nome" id="nome" form="formularioCadastro">
+</body>
+</html>
