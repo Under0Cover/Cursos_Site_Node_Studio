@@ -1,0 +1,23 @@
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 7px;
+}
+
+.nome {
+    background-color: aqua;
+}
+
+.e-mail {
+    background-color: aquamarine;
+}
+
+.telefone {
+    background-color: aqua;
+}
+
+.cargo {
+    background-color: antiquewhite;
+}
