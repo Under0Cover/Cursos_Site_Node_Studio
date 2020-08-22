@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter // Progress</title>
+    <link rel="stylesheet" href="style_aula_12.css">
+</head>
+<body>
+    <!-- Usando a tag meter -->
+    <meter min="0" low="3" optimum="6" high="8" max="10">
+        <!-- Esse negócio pode ser usado pra senhas -->
+        <!-- Você pode fazer por porcentagem -->
+        <!-- Atribuí um value 0.% e ele irá mostrar, mas apaga os outros valores-->
+    </meter>
+    <!-- A tag progress é semelhante ao meter -->
+    <!-- Atribuí um value -->
+    <progress max="100"></progress>
+
+    <!-- Trabalhando com Figure e FigCaption -->
+    <!-- Envolve a tag img entre as tags figure -->
+    <figure>
+        <img src="papagaio.jpg" alt="Papagaio" title="Papagaio"> -->
+        <!-- O FigCaption é uma leganda da sua img -->
+        <figcaption>Meu papagaio favorito</figcaption>
+    </figure>
+
+    <!-- Trabalhando com mapa de imagens -->
+    <img src="imagem.jpg" alt="Imagem Mapeada" usemap="#imagemMapeada">
+    <!-- O usemap é o link do mapa com a imagem -->
+    <!-- Usando a tag map -->
+    <map name="imagemMapeada">
+        <!-- Usamos o shape para definir o formatado do mapa -->
+        <!-- Retângulo recebe rect, Círculo recebe circle e Polígono recebe poly -->
+        <area shape="rect" coords="141,91,316,354" href="#">
+        <!-- O retângulo recebe como primeira coordenada, os pontos superior esquerdo -->
+        <!-- E como segunda coordenada, os pontos inferior direito -->
+        <!-- Depois de mapear(ou antes) você deve informar a imagem que usará o mapeamento de imagens -->
+        <area shape="circle" coords="485,82,35" href="#">
+        <!-- O círculo recebe dois pares de coordenadas, que são do ponto central da imagem -->
+        <!-- A terceira coordenada é o tamanho do raio do círculo -->
+        <area shape="poly" coords="150,382,316,380,231,448" href="#">
+        <!-- A imagem é um triângulo -->
+        <!-- Selecionado todos os pontos do triângulo em sentido horário -->
+    </map>
+
+    <!-- Usando a tag time e o atributo datetime -->
+    <time datetime="2020-08-09 23:09">09 de Agosto de 2020, às 23:09</time>
+    <!-- Data configurada no sistema americano: Ano-Mês-Dia -->
+    <!-- Falando sobre Menu -->
+    <!-- A tag menu representa uma lista de comandos -->
+    <!-- Menu de contexto, Barra de Ferramentas e Menu de PopUp -->
+    <!-- Apenas o FireFox tem suporte ao menu de contexto -->
+    <!-- O menu de contexto só vai aparecer quando você clica com o segundo botão do mouse -->
+    <!-- E pra isso, você precisa clicar sobre um objeto -->
+    <!-- Então vamos criar uma DIV antes do MENU e dos Submenu -->
+    <div class="elemento" contextmenu="meuMenu">
+        <!-- No curso o professor deixou os menus fora da DIV -->
+        <!-- Vou deixar dentro, para fins de organização -->
+        <menu type="context" id="meuMenu">
+            <menuitem>Atualizar</menuitem>
+        </menu>
+        <menu label="Siga-nos">
+            <!--Caminho do ícone segue os padrões de imagens -->
+            <menuitem icon="icons/facebook.png">Facebook</menuitem>
+            <menuitem icon="icons/google.png">Google</menuitem>
+        </menu>
+    </div>
+    <!-- Falando sobre Keygen (superficial) -->
+    <form action="cadastro.php" method="get">
+        Nome: <br>
+        <input type="text" name="nome" id="nome"><br>
+        Chave: <br>
+        <keygen name="chave"><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <!-- Só pra assumir que a tag foi mencionada -->
+</body>
+</html>
