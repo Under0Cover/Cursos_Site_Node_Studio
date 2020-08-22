@@ -1,0 +1,44 @@
+svg {
+    background-color: #cccccc;
+}
+
+svg rect {
+    fill: blue;
+    stroke: red;
+    stroke-width: 3px;
+    opacity: 0.5;
+}
+
+svg circle {
+    fill: blue;
+    stroke: red;
+    stroke-width: 3px;
+    opacity: 0.5;
+}
+
+svg elipse {
+    fill: blue;
+    stroke: red;
+    stroke-width: 3px;
+    opacity: 0.5;
+}
+
+svg text {
+    fill: sienna;
+}
+
+svg line {
+    stroke: red;
+    stroke-width: 3px;
+}
+
+svg polyline {
+    stroke-width: 3px;
+    stroke: rebeccapurple;
+}
+
+svg polygon {
+    stroke: red;
+    stroke-width: 3px;
+    fill: blue;
+}
