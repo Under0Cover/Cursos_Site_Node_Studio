@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com SVG</title>
+    <link rel="stylesheet" href="style_aula_13.css">
+</head>
+<body>
+    <!-- Começando a utilizar a svg -->
+    <svg width="300" height="160">
+        <!-- Definir o shape como no mapa de imagens -->
+        <!-- Usando o retângulo -->
+        <rect width="280" height="140" x="10" y="10" rx="20" ry="20">
+        <!-- X para determinar a margem horizontal -->
+        <!-- Y para determinar a margem vertical -->
+        <!-- RX e RY para arredondar as bordas -->
+        <!-- Usando o círculo -->
+            <circle cx="225" cy="80" r="57">
+                <!-- cx é coordenada de x -->
+                <!-- cy é coordenada de y -->
+                <!-- r é raio do círculo -->
+        <!-- Usando o elipse -->
+            <elipse cx="150" cy="80" rx="110" ry="50">
+                <!-- rx é o raio horizontal -->
+                <!-- ry é o raio vertical -->
+        <!-- Usando texto -->
+            <text x="30" y="30">Aprendendo SVG</text>
+        <!-- Utilizando outros elementos interessantes do SVG -->
+            <!-- Utilizando a linha -->
+            <line x1="18" y1="26" x2="287" y2="138">
+                <!-- A linha utiliza X1 e X2 para coordenadas horizontais -->
+                <!-- A linha utiliza Y1 e Y2 para coordenadas verticais -->
+            <!-- Utilizando polyline ou várias linhas -->
+            <polyline points="10,78 67,43 148,104 178,47 290,130">
+                <!-- Nesse caso coloca as coordenadas X e Y separadas por vírgula -->
+                <!-- Dá-se um espaço e coloca as outras duplas de coordenadas -->
+            <!-- Utilizando o polygon -->
+            <polygon points="34,111 125,14 190,120">
+                <!-- Mesmo exemplo do polyline -->
+    </svg>
+</body>
+</html>
