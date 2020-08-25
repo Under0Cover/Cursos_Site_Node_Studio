@@ -1,0 +1,41 @@
+/* AULA 02 */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: blue;
+    font-size: 50px;
+}
+
+p {
+    color: blue;
+    font-size: 50px;
+}
+
+input [type="text"] {
+    width: 200px;
+    background-color: #cccccc;
+    height: 35px;
+    border: none;
+}
+
+input [type="email"] {
+    width: 250px;
+    height: 250px;
+    background-color: #ccc000;
+    border: solid;
+    border-color: black;
+}
+
+input [type="submit"] {
+    width: 50px;
+    background-color: blueviolet;
+    height: 38px;
+    border: none;
+    cursor: pointer;
+    color: chartreuse;
+}
