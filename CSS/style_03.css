@@ -1,0 +1,9 @@
+
+/* AULA 03 */
+
+h1, h2, p {
+    text-align: center;
+    color: #000000;
+}
+
+/* Ao invés de ter o trabalho de digitar várias vezes o mesmo código, você pode agrupar seletores, separando por vírgulas */
