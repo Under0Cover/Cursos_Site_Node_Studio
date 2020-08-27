@@ -1,0 +1,20 @@
+/* AULA 04 */
+/* Para usar o seletor de class; utiliza-se .NomeDaClass */
+
+.textoPrincipal {
+    color: darkred;
+    text-align: center;
+}
+
+.fundoPrincipal {
+    background-color: dimgrey;
+    padding: 20px;
+}
+
+/* Para usar o seletor de id; utiliza-se #NomeDoId */
+
+#conteudo {
+    background-color: lightskyblue;
+    padding: 25px;
+    color: orchid;
+}
