@@ -1,0 +1,11 @@
+/* AULA 05 */
+/* width é largura e possuí max e min */
+/* height é altura e possuí max e min */
+
+#conteudo {
+    background-color: green;
+    color: #f0000f;
+    padding: 20px;
+    width: 500px;
+    height: 150px;
+}
