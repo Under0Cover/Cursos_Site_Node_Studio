@@ -1,0 +1,24 @@
+/* Aula 07 */
+/* text e suas propriedades */ 
+
+p {
+    color: red;
+    text-transform: uppercase;
+    text-indent: 25px;
+}
+
+h1 {
+    text-align: left;
+    text-decoration: underline;
+    text-shadow: 3px 3px 3px brown;
+}
+
+h2 {
+    text-align: right;
+    text-decoration: overline;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: line-through;
+}
