@@ -1,0 +1,17 @@
+/* Aula 08 */
+/* Box Sizing e Box Shadow */
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Pra manter o box com o limite do width e não ter problemas com padding */
+/* box-shadow é a sombra do box */
+/* As definições são: Sombra Horizontal, Sombra Vertical, Esfumação e Cor */
+
+#conteudo {
+    background: red;
+    width: 300px;
+    padding: 20px;
+}
