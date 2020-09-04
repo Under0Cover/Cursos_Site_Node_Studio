@@ -1,0 +1,14 @@
+/* Aula 11 */
+/* Fontes */
+
+* {
+    font-size: 100%;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-weight: 800;
+    font-style: oblique;
+    font-size: 2.5em;
+}
