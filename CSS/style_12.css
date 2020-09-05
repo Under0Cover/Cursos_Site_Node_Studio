@@ -1,0 +1,10 @@
+/* Aula 12 */
+/* Cores e Gradiente */
+
+
+#cores {
+    width: 200px;
+    height: 200px;
+    background-color: linear-gradient(red,blue);
+    color: white;
+}
