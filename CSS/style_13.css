@@ -1,0 +1,18 @@
+/* Aula 13 */
+/* Position */
+
+
+#conteudo {
+    width: 600px;
+    height: 1200px;
+    background-color: red;
+    position: relative;
+}
+
+#texto {
+    width: 500px;
+    background-color: green;
+    position: absolute;
+    left: 0;
+    right: 40px;
+}
