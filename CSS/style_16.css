@@ -1,0 +1,11 @@
+/* Aula 16 */
+/* Background */
+
+body {
+    background-color: grey;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: auto;
+}

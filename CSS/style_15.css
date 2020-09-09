@@ -1,0 +1,21 @@
+/* Aula 15 */
+/* Transition */
+
+
+#exemplo {
+     width: 200px;
+     height: 200px;
+     background-color: red;
+     transition-property: width;
+     transition-duration: 3s;
+     transition-timing-function: linear;
+     transition-delay: 2s;
+     transition: height 3s linear 2s;
+     transition: background-color 3s linear 2s;
+}
+
+#exemplo:hover {
+    width: 350;
+    height: 350;
+    background-color: green;
+}

@@ -1,0 +1,23 @@
+/* Aula 21 */
+/* Função Calc */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-image: url(Under.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+}
+
+nav {
+    width: 100vw;
+    height: 80px;
+    background-color: blue;
+}

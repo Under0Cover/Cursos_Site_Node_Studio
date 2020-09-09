@@ -1,0 +1,15 @@
+/* Aula 18 */
+/* Current Color */
+
+
+body{
+    background-color: blue;
+}
+
+button {
+    background-color: white;
+    color: red;
+    width: 150px;
+    height: 150px;
+    border: 2px solid currentColor;
+}

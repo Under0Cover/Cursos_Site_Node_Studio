@@ -1,0 +1,21 @@
+/* Aula 22 */
+/* Filter */
+
+/* Filters: 
+- blur (desfoque)
+- brightness (brilho)
+- contrast (contraste)
+- grayscale (escale de cinza)
+- invert (inverter as cores)
+- opacity (transparência)
+- saturate (saturação)
+- sepia (tons de sepia)
+- hue-rotate (mudar as cores conforme o ângulo)
+- drop-shadow (sombra)
+*/
+
+
+img {
+    margin: 40px 0 0 60px;
+    filter: grayscale(100%)
+}

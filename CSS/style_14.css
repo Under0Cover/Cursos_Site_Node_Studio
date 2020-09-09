@@ -1,0 +1,10 @@
+/* Aula 14 */
+/* Border e Outline */
+
+
+#exemplo {
+    border-style: groove;
+    border-width: 5px;
+    border-color: red;
+    outline: dotted 5px green;
+}

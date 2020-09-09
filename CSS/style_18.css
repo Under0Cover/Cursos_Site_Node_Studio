@@ -1,0 +1,15 @@
+/* Aula 18 */
+/* Variavéis */
+
+
+:root {
+    --bg-color: blue;
+    --cor-do-texto: white;
+    --espacamento: 20px;
+}
+
+#div1 {
+    background-color: var(--bg-color);
+    color: var(--cor-do-texto);
+    padding: var(--espacamento);
+}

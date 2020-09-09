@@ -1,0 +1,8 @@
+/* Aula 19 */
+/* Estilizando via URL */
+
+
+.noticia:target {
+    background-color: #c3c3c3;
+    padding: 30px;
+}
