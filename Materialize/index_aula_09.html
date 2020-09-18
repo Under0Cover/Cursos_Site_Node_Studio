@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- HELPERS -->
+    <!-- ALINHAMENTO VERTICAL -->
+    <div class="valign-wrapper red">
+        <!-- ESSE ALINHAMENTO FAZ O TEXTO FICAR CENTRALIZADO NA DIV, MAS CONTINUA À ESQUERDA DO PARÁGRAFO -->
+        <h5 class="valign">Olá Mundo</h5>
+    </div>
+    <div class="valign-wrapper blue">
+    </div>
+    <div class="black">
+        <!-- PARA ALINHAMENTO HORIZONTAL PODEMOS USAR TRÊS CLASSES -->
+        <!-- left-align PARA A ESQUERDA -->
+        <h5 class="left-align white-text">Olá Mundo</h5>
+    </div>
+    <div class="yellow">
+        <!-- right-align PARA A DIREITA -->
+        <h5 class="right-align">Olá Mundo</h5>        
+    </div>
+    <div class="green">
+        <!-- center-align PARA O CENTRO -->
+        <h5 class="center-align">Olá Mundo</h5>
+    </div>
+    <!-- TRABALHANDO COM O float -->
+    <div class="row">
+        <!-- UMA DIV COM FLOAT A ESQUERDA -->
+        <div class="col s6 red left">Red Color</div>
+        <!-- UMA DIV COM FLOAT A DIREITA -->
+        <div class="col s6 blue right">Blue Color</div>
+    </div>
+    <!-- AS CLASSES DE hide SÃO BEM ESPECÍFICAS E UTEIS -->
+    <!-- hide OCULTA PARA TODOS OS DISPOSITIVOS -->
+    <div class="row hide">ESCONDE EM TODOS</div>
+    <!-- hide-on-small-only OCULTO APENAS PARA CELULARES -->
+    <div class="row hide-on-small-only">ESCONDE APENAS EM CELULAR</div>
+    <!-- hide-on-med-only OCULTO APENAS PARA TABLET -->
+    <div class="row hide-on-med-only">ESCONDE APENAS EM TABLET</div>
+    <!-- hide-on-med-and-down OCULTO PARA TABLET E ABAIXOS -->
+    <div class="row hide-on-med-and-dow">ESCONDE EM TABLETS E INFERIORES</div>
+    <!-- hide-on-med-and-up OCULTO PARA TABLET E SUPERIORES -->
+    <div class="row hide-on-med-and-up">ESCONDE EM TABLETS E SUPERIORES</div>
+    <!-- hide-on-large-only OCULTO APENAS PARA DESKTOP -->
+    <div class="row hide-on-large-only">ESCONDE APENAS EM DESKTOPS</div>
+    <!-- show-on-small EXIBE APENAS PARA CELULARES -->
+    <div class="row show-on-small">EXIBE APENAS EM CELULARES</div>
+    <!-- show-on-medium EXIBE APENAS PARA TABLETS -->
+    <div class="row show-on-medium">EXIBE APENAS EM TABLETS</div>
+    <!-- show-on-large EXIBE APENAS PARA DESKTOPS -->
+    <div class="row show-on-large">EXIBE APENAS EM DESKTOPS</div>
+    <!-- show-on-medium-and-up EXIBE PARA TABLETS E SUPERIORES -->
+    <div class="row show-on-medium-and-up">EXIBE EM TABLETS E DESKTOPS</div>
+    <!-- show-on-medium-and-down EXIBE PARA TABLETS E INFERIORES -->
+    <div class="row show-on-medium-and-down">EXIBE EM TABLETS E INFERIORES</div>
+    <!-- TRABALHANDO COM truncate -->
+    <!-- truncate É A OPÇÃO DE COLOCAR RETICÊNCIAS NO TEXTO AO INVÉS DE DIMINUIR O TAMANHO DELE-->
+    <h4 class="truncate">Este é um exemplo de parágrafo que sofre a ação da classe truncate, fazendo ficar com reticências ao fim da frase, enquanto se diminui o tamanho dela.</h4>
+    <!-- TRABALHANDO COM hoverable -->
+    <!-- hoverable É UMA CLASSE QUE ADICIONA UMA CAIXA DE SOBRA -->
+    <!-- COM EFEITO hover -->
+    <!-- RECOMENDA-SE O USO EM CARTÕES -->
+    <div class="card-panel hoverable">Painel de Cartão com hoverable</div>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+</body>
+</html>
