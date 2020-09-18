@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- TRABALHANDO COM COLLECTIONS -->
+    <!-- COLLECTIONS NADA MAIS SÃO DO QUE LISTAS -->
+    <!-- COLLECTIONS CRIADAS COM LINKS -->
+    <div class="collection">
+        <a href="#!" class="collection-item">Rodrigo</a>
+        <a href="#!" class="collection-item">Adrielle</a>
+    </div>
+    <!-- AS COLLECTIONS TAMBÉM PODEM SER CRIADAS COM UL/LI -->
+    <ul class="collection with-header">
+        <!-- TAMBÉM PODEMOS ADICIONAR O CABEÇALHO -->
+        <li class="collection-header"><h4>Nomes:</h4></li>
+        <li class="collection-item">Rodrigo</li>
+        <li class="collection-item">Adrielle</li>
+    </ul>
+    <!-- TEMOS TAMBÉM O COLLECTION SECONDARY CONTENT (OU CONTEÚDO SECUNDÁRIO -->
+    <ul class="collection with-header">
+        <li class="collection-header"><h4>Nomes:</h4></li>
+        <li class="collection-item"><div>Rodrigo <a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Adrielle <a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Tales Oliver <a href="#!" class="secondary-content"><i class="material-icons">face</i></a></div></li>
+    </ul>
+    <!-- AVATAR CONTENT -->
+    <!-- SÃO LISTAS COM ÍCONES DE AVATAR NO INICIO -->
+    <ul class="colletion with-header">
+        <li class="collection-header"><h4>Nomes:</h4></li>
+        <li class="collection-item avatar">
+            <i class="material-icons circle">insert_chart</i>
+            <span class="title">Tales Oliver</span>
+            <p>First Line <br>
+               Second Line
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+    </ul>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+</body>
+</html>
