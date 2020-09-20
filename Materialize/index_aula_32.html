@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- TRABALHANDO COM FORMULÁRIOS (002) -->
+    <div class="row">
+        <form action="" class="col s12">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">face</i>
+                <!-- O COMANDO PREFIX SERVE PARA FIXAR O ÍCONE AO LADO DO INPUT -->
+                <input type="text" id="nome" placeholder="Seu nome" data-length="25">
+                <!-- CASO HAJA NECESSIDADE, PODE DESABILITAR O INPUT, COM O COMANDO DISABLED -->
+                <label for="nome">Nome Completo</label>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input type="email" data-length="15" name="email" id="email" class="validate" placeholder="Seu e-mail">
+                <label for="email">E-mail</label>
+                <span class="helper-text" data-error="E-mail inválido" data-success="E-mail válido"></span>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">edit_mode</i>
+                <textarea name="formulario" id="text" cols="30" rows="10" class="materialize-textarea" placeholder="Sua mensagem"></textarea>
+                <label for="text">Mensagem</label>
+            </div>
+        </form>
+    </div>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+    <!-- SCRIPT PARA A CONTAGEM DE CARACTERES PARA O NOME E E-MAIL -->
+    <script>
+        $(document).ready(function() {
+            $('input#nome, input#email').characterCounter();
+        });
+    </script>
+</body>
+</html>
