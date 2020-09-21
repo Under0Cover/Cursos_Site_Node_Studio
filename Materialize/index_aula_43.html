@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- TRABALHANDO COM JAVASCRIPT -->
+    <!-- TRABALHANDO COM COLLAPSIBLE -->
+    <ul class="collapsible popout">
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">filter_drama</i>Primeiro
+            </div>
+            <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">place</i>Segundo
+            </div>
+            <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+        </li>
+        <li class="active">
+            <div class="collapsible-header">
+                <i class="material-icons">whatshot</i>Terceiro
+            </div>
+            <div class="collapsible-body">
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+        </li>
+    </ul>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+    <!-- SCRIPT DO COLLAPSIBLE -->
+    <script>
+        $(document).ready(function(){
+            $('.collapsible').collapsible({
+                /* ACCORDION: FALSE, PERMITE ABRIR VÁRIA ABAS
+                ACCORDION: TRUE, SÓ PERMITE UMA GUIA POR VEZ */
+                accordion: false,
+            });
+        });
+    </script>
+</body>
+</html>
