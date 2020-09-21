@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- TRABALHANDO COM JAVASCRIPT -->
+    <!-- TRABALHANDO COM MEDIA -->
+    <!-- TRABALHANDO COM MATERIAL BOX -->
+    <img src="imagens/developer.png" class="materialboxed" data-caption="Olá mundo!">
+    <!-- TRABALHANDO COM SLIDER -->
+    <hr> <hr> <hr> <hr>
+    <div class="slider">
+        <!-- NA DIV SLIDER PODER SER ADICIONADO O ATRIBUTO FULLSCREEN -->
+        <!-- ASSIM O SLIDER PASSAR A TER O TAMANHO TOTAL DA TELA -->
+        <ul class="slides">
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/1">
+                <div class="caption center-align">
+                    <h3>Esse é o mini Título!</h3>
+                    <h5 class="light grey-text text-lighten-3">Esse é o slogan pequeno.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/2">
+                <div class="caption left-align">
+                    <h3>Esse é o mini Título alinhado à esquerda</h3>
+                    <h5 class="light grey-text text-lighten-3">Esse é o slogan pequeno.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/3"> 
+                <div class="caption right-align">
+                    <h3>Esse é o mini título alinhado à direita</h3>
+                    <h5 class="light grey-text text-lighten-3">Esse é o slogan pequeno.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/4"> 
+                <div class="caption center-align">
+                    <h3>Esse é o mini Título!</h3>
+                    <h5 class="light grey-text text-lighten-3">Esse é o slogan pequeno.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+    <!-- SCRIPT MATERIAL BOX -->
+    <script>
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+        });
+    </script>
+    <!-- SCRIPT DO SLIDER -->
+    <script>
+         $(document).ready(function(){
+            $('.slider').slider({
+                indicators: false,
+                duration: 50,
+            });
+        });
+    </script>
+</body>
+</html>
