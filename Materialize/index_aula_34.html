@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- TRABALHANDO COM FORMULÁRIOS (004) -->
+    <!-- TRABALHANDO COM SELECT -->
+    <!-- SELECT SIMPLES -->
+    <div class="row">
+        <form action="" class="col s12">
+            <div class="input-field col s12">
+                <select class="browser-default">
+                    <option value="" disabled selected>Selecione a sua opção</option>
+                    <option value="1">Opção 01</option>
+                    <option value="2">Opção 02</option>
+                    <option value="3">Opção 03</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="input-field col s12 container">
+        <input type="date" class="datepicker">
+        <input type="time" class="timepicker">
+    </div>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+    <!-- SCRIPT DE INICIALIZAÇÃO DO SELECT -->
+    <script>
+        $(document).ready(function(){
+            $('select').material_select();
+        });
+    </script>
+</body>
+</html>
