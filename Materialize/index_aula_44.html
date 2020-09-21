@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- TRABALHANDO COM JAVASCRIPT -->
+    <!-- TRABALHANDO COM MODALS -->
+    <!-- BOTÃO MODAL -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal">Botão Modal</a>
+    <!-- STRUTURA MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h4>Termos e Condições de Uso</h4>
+            <p>Ninguém lê mesmo...</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceito</a>
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">Não Aceito</a>
+        </div>
+    </div>
+    <!-- MODAL COM RODAPÉ FIXO -->
+    <!-- BOTÃO MODAL -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal_rodape">Modal Rodapé</a>
+    <!-- STRUTURA MODAL -->
+    <div id="modal_rodape" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Termos e Condições de Uso</h4>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas elementum odio nec facilisis. Nam in dictum nisi. Aenean nisl nibh, bibendum ac egestas sit amet, placerat non erat. Etiam massa justo, rhoncus at dignissim vulputate, commodo in est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris euismod arcu at interdum vulputate. Vivamus finibus eu magna eu feugiat.</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas elementum odio nec facilisis. Nam in dictum nisi. Aenean nisl nibh, bibendum ac egestas sit amet, placerat non erat. Etiam massa justo, rhoncus at dignissim vulputate, commodo in est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris euismod arcu at interdum vulputate. Vivamus finibus eu magna eu feugiat.</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas elementum odio nec facilisis. Nam in dictum nisi. Aenean nisl nibh, bibendum ac egestas sit amet, placerat non erat. Etiam massa justo, rhoncus at dignissim vulputate, commodo in est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris euismod arcu at interdum vulputate. Vivamus finibus eu magna eu feugiat.</p>
+        </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Concordo</a>
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">Não concordo</a>
+        </div>
+    </div>
+    <!-- MODAL SUBINDO DO RODAPÉ -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal_subindo">Modal</a>
+    <!-- STRUTURA MODAL -->
+    <div id="modal_subindo" class="modal bottom-sheet modal-fixed-footer">
+        <!-- ADICIONEI A CLASSE MODAL-FIXED-FOOTER PARA OS BOTÕES DE ACEITO E NÃO ACEITO FICAREM FIXOS NO FOOTER -->
+        <div class="modal-content">
+            <h4>Termos e Condições de Uso</h4>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas elementum odio nec facilisis. Nam in dictum nisi. Aenean nisl nibh, bibendum ac egestas sit amet, placerat non erat. Etiam massa justo, rhoncus at dignissim vulputate, commodo in est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris euismod arcu at interdum vulputate. Vivamus finibus eu magna eu feugiat.</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas elementum odio nec facilisis. Nam in dictum nisi. Aenean nisl nibh, bibendum ac egestas sit amet, placerat non erat. Etiam massa justo, rhoncus at dignissim vulputate, commodo in est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris euismod arcu at interdum vulputate. Vivamus finibus eu magna eu feugiat.</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas elementum odio nec facilisis. Nam in dictum nisi. Aenean nisl nibh, bibendum ac egestas sit amet, placerat non erat. Etiam massa justo, rhoncus at dignissim vulputate, commodo in est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris euismod arcu at interdum vulputate. Vivamus finibus eu magna eu feugiat.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceito</a>
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">Não Aceito</a>
+        </div>
+    </div>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+    <!-- SCRIPT MODALS -->
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+    </script>
+</body>
+</html>
