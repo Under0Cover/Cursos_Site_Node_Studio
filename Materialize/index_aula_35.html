@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- TRABALHANDO COM FORMULÁRIOS (005) -->
+    <div class="row">
+        <form action="#" class="col s12">
+            <!-- TRABALHANDO COM RADIO BUTTONS -->
+            <p>
+                <label for="vasco">
+                    <input type="radio" name="times_futebol" id="vasco" class="with-gap">
+                    <span>Vasco</span>
+                </label>
+            </p>
+            <p>
+                <label for="flamengo">
+                    <input type="radio" name="times_futebol" id="flamengo" class="with-gap">
+                    <span>Flamengo</span>
+                </label>
+            </p>
+            <p>
+                <label for="fluminense">
+                    <input type="radio" name="times_futebol" id="fluminense" class="with-gap">
+                    <span>Fluminense</span>
+                </label>
+            </p>
+            <p>
+                <label for="botafogo">
+                    <input type="radio" name="times_futebol" id="botafogo" class="with-gap">
+                    <span>Botafogo</span>
+                </label>
+            </p>
+            <!-- TRABALHANDO COM CHECKBOX -->
+            <p>
+                <label for="sao_paulo">
+                    <input type="checkbox" name="times_futebol" id="sao_paulo" class="filled-in">
+                    <span>São Paulo</span>
+                </label>
+            </p>
+            <!-- TRABALHANDO COM SWITCHES -->
+            <!-- Switch -->
+            <div class="switch">
+                <label>
+                    Desligado
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    Ligado
+                </label>
+            </div>  
+        </form>
+    </div>
+    <!-- TRABALHANDO COM FILE INPUT -->
+    <form action="#" class="container left">
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>Arquivo</span>
+                <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+            </div>
+        </div>
+    </form>
+    <!-- TRABALHANDO COM RANGE -->
+    <p class="range-field container right">
+        <input type="range" name="range" id="range" min="0" max="20">
+    </p>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+</body>
+</html>
