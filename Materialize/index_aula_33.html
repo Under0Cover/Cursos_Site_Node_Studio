@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- TRABALHANDO COM FORMULÁRIOS (003) -->
+    <div class="row">
+        <form action="" class="col s12">
+            <i class="material-icons">email</i>
+            Digite o seu E-mail:
+            <!-- TRABALHANDO COM INPUT INLINE -->
+            <div class="input-field inline">
+                <input type="email" name="email" id="email">
+                <label for="email">E-mail</label>
+            </div>
+        </form>
+    </div>
+    <!-- TRABALHANDO COM INPUT AUTO COMPLETE -->
+    <div class="row">
+        <form action="" class="col s12">
+            <div class="input-field">
+                <input type="email" name="email_complete" id="email_complete" placeholder="Auto Complete" autocomplete="off">
+                <!-- AUTO COMPLETE OFF NO INPUT PARA DESABILITAR O PADRÃO DO NAVEGADOR -->
+                <label for="email_complete">E-mail</label>
+            </div>
+        </form>
+    </div>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+    <!-- SCRIPT DO AUTO COMPLETE -->
+    <script>
+        $(document).ready(function(){
+            $('input#email_complete').autocomplete({
+                data: {
+                    "Apple": 'https://placehold.it/250x250',
+                    "Microsoft": 'https://placehold.it/250x250',
+                    "Google": 'https://placehold.it/250x250'
+                },
+                limit: 20,
+                onAutocomplete: function(val) {
+
+                },
+                minLength: 1,
+            });
+        });
+    </script>
+</body>
+</html>
