@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- TRABALHANDO COM JAVASCRIPT -->
+    <!-- TRABALHANDO COM NAVBAR -->
+    <nav> <!-- CONTEÚDO DO NAV --> </nav>
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="imagens/office.jpg">
+                </div>
+                <a href="#!"><img class="circle" src="imagens/yuna.jpg"></a>
+                <a href="#!"><span class="white-text name">Maria Joana</span></a>
+                <a href="#!"><span class="white-text email">M_Joana@gmail.com</span></a>
+            </div>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">cloud</i>Link com ícone</a></li>
+        <li><a href="#!">Link normal</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subtítulo</a></li>
+        <li><a class="waves-effect" href="#!">Link com efeito de ondas</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+    <!-- SCRIPT DO NAVBAR -->
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+</html>
