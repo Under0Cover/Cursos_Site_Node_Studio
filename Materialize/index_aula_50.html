@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- TRABALHANDO COM JAVASCRIPT -->
+    <!-- TRABALHANDO COM PUSHPIN -->
+    <!-- BLOCO 03 -->
+    <div class="bloco red">
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav class="red target">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#!">Link 01</a></li>
+                    <li><a href="#!">Link 02</a></li>
+                    <li><a href="#1">Link 03</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- BLOCO O2-->
+    <div class="bloco blue">
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav class="blue">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#!">Link 01</a></li>
+                    <li><a href="#!">Link 02</a></li>
+                    <li><a href="#1">Link 03</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+    <!-- SCRIPT DO PUSHPIN -->
+    <script>
+        $(document).ready(function(){
+            $('.target').pushpin({
+                bottom: 500
+            });
+        });
+    </script>
+</body>
+</html>
