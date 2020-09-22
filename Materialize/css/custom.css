@@ -1,2 +1,4 @@
 html {font-family: Tahoma;}
 .parallax-container {height: 700px;}
+
+html, body, .bloco {height: 100%;}
