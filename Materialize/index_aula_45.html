@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Matereialize - CSS</title>
+</head>
+<body>
+    <!-- TRABALHANDO COM JAVASCRIPT -->
+    <!-- TRABALHANDO COM DIÁLOGOS -->
+    <!-- TRABALHANDO COM TOASTS -->
+    <!-- BOTÃO TOAST -->
+    <a onclick="M.toast({html: 'Olá toast'})" class="btn wave-effect">Toast!</a>
+    <!-- TOAST COM CALLBACK -->
+    <a class="btn" onclick="M.toast({html: 'Olá toast', completeCallback: function(){alert('Você jogou fora o toast')}})">Toast!</a>
+    <hr> <hr>
+    <!-- TRABALHANDO COM TOOLTIPS -->
+    <!-- UMA DIV PARA ESTILIZAÇÃO E VISUALIZAÇÃO-->
+    <div class="container row">
+        <!-- EM BAIXO -->
+        <a class="btn tooltipped" data-position="bottom" data-tooltip="Estou em baixo">Passe o mouse</a>
+        <!-- EM CIMA -->
+        <a class="btn tooltipped" data-position="top" data-tooltip="Estou em cima">Passe o mouse</a>
+        <!-- À ESQUERDA -->
+        <a class="btn tooltipped" data-position="left" data-tooltip="Estou à esquerda">Passe o mouse</a>
+        <!-- À DIREITA -->
+        <a class="btn tooltipped" data-position="right" data-tooltip="Estou à direita">Passe o mouse</a>
+    </div>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- MATERIALIZE JAVASCRIPT -->
+    <script src="js/materialize.js"></script>
+    <!-- SCRIPT DO TOOLTIPS -->
+    <script>
+        $(document).ready(function(){
+            $('.tooltipped').tooltip();
+        });
+    </script>
+</body>
+</html>
