@@ -14,22 +14,79 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <section class="home bloco">
+    <!-- HEADER -->
+    <header>
+        <!-- MENU MOBILE -->
+        <ul class="sidenav" id="menu-mobile">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre o Boa Forma</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#unidades">Unidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <!-- FIM DO MENU MOBILE -->
+        <!-- MENU DESKTOP -->
+        <div class="navbar-fixed">
+            <nav class="navbar z-depth-0">
+                <div class="nav-wrapper container">
+                    <!-- TÍTULO ESCONDIDO -->
+                    <h1 class="logo_text">Centro Boa Forma - Se espaço de saúde</h1>
+                    <!-- FIM DO TÍTULO ESCONDIDO -->
+                    <!-- LOGO -->
+                    <a href=""><img class="logo_img" src="img/logo.png" alt="logo da empresa"></a>
+                    <!-- FIM DA LOGO -->
+                    <ul class="ul_menu right light hide-on-med-and-down">
+                        <!-- ITENS DO MENU -->
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre o Boa Forma</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#unidades">Unidades</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <!-- FIM DOS ITENS -->
+                    </ul>
+        <!-- FIM DO MENU DESKTOP -->
+                    <!-- ÍCONE MENU -->
+                    <a href="#" data-target="menu-mobile" class="hide-on-large-only right sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <!-- FIM DO ÍCONE MENU -->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- FIM DO HEADER -->
+    <!-- SECTION HOME -->
+    <section class="home bloco scrollSpy" id="home">
         <div class="row container banner">
             <div class="col s12 center">
+                <!-- TÍTULO EXIBIDO -->
                 <h2 class="white-text">O melhor treinamento funcional da região</h2>
+                <!-- FIM DO TÍTULO -->
+                <!-- PARAGRAFO EXIBIDO -->
                 <p class="white-text light">Um novo conceito em prevenção, promoção e reabilitação da saúde para quem busca melhora do condicionamento e emagrecimento, além de ser divertido e desafiado. Quer experimentar?</p>
-                <div class="row botoes">
-                    <a href="" class="btn btn-large blue">Sobre nós</a>
-                    <a href="" class="btn btn-large white black-text">Contato</a>
+                <!-- FIM DO PARAGRAFO -->
+                <div class="row">
+                    <a href="#sobre" class="btn btn-large blue-color">Sobre nós</a>
+                    <a href="#contato" class="btn btn-large white black-text">Contato</a>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- FIM DO SECTION HOME -->
+    <!-- SECTION SOBRE -->
+    <section class="sobre bloco scrollSpy" id="sobre">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="light">Sobre o Boa Forma</h2>
+            </div>
+            <div class="col s12 l6">
+                <p class="light">O Centro Boa Forma chegou a Uberaba e região trazendo um novo conceito em prevenção, promoção e reabilitação da saúde localizada no centro da cidade, conta com fácil estacionamento, salas amplas e climatizadas, ambiente confortável e seguro aos seus usuários. Suas instalações foram projetadas e equipadas sob medida, dentro dos padrões de acessibilidade para acolher principalmente pessoas com limitações funcionais. O centro dispõe de uma equipe profissional qualificada e com experiência no mercado, prezando sempre por tratamentos individualizados e baseados em evidências científicas.</p>
+            </div>
+        </div>
+    </section>
+    <!-- FIM DO SECTION SOBRE -->
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- JAVASCRIPT MATERIALIZE CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
 </body> 
 </html>
