@@ -6,6 +6,11 @@ $(document).ready(function () {
     $('.scrollspy').scrollSpy({
         scrollOffset: 0
     });
+    // CAROUSEL
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+    })
 })
 
 /* SCRIPT PARA MUDAR FUNDO DO NAVBAR (CABEÇALHO/MENU) */
