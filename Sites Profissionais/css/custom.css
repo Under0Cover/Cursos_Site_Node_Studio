@@ -61,3 +61,15 @@ nav i.material-icons {display: block; font-size: 24px; height: 94px; line-height
 .sobre h2 {font-size: 2rem; color: #212121; text-transform: uppercase;}
 .sobre h2:after {content: ''; display: block; width: 100px; border-top: 1px solid #2dc7d0; margin: 15px auto;}
 .sobre p {line-height: 2.5rem; text-align: justify;}
+.sobre .missao {padding: 20px 0px; margin-top: 35px;}
+.sobre .missao .icon {color: #fff;}
+.sobre .missao h3 {font-size: 1.5rem; color: #fff; text-transform: uppercase;}
+.sobre .missao p {color: #fff; text-align: center;}
+.sobre .missao li {color: #fff; text-align: center;}
+
+/* SERVIÇOS */
+.servicos {background-image: url('../img/textura2.png');}
+.servicos h2 {font-size: 2rem; color: #fff; text-transform: uppercase;}
+.servicos h2:after {content: ''; display: block; width: 100px; border-top: 1px solid #2dc7d0; margin: 15px auto;}
+.servicos p {color: #fff; line-height: 1.8rem;}
+.servicos .p_card {color: #212121;}
