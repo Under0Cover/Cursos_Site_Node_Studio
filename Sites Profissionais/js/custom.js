@@ -10,8 +10,12 @@ $(document).ready(function () {
     $('.carousel.carousel-slider').carousel({
         fullWidth: true,
         indicators: true
-    })
-})
+    });
+    // MODAL
+    $('.modal').modal();
+    // TABS
+    $('ul.tabs').tabs();
+});
 
 /* SCRIPT PARA MUDAR FUNDO DO NAVBAR (CABEÇALHO/MENU) */
 $(window).on("scroll", function(){
