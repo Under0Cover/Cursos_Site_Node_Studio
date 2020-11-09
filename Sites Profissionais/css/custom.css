@@ -54,6 +54,12 @@ nav.nav-extended .nav-wrapper {min-height: 94px; height: auto;}
 nav i.material-icons {display: block; font-size: 24px; height: 94px; line-height: 94px;}
 .sidenav {background: url(../img/footer_lodyas.png); width: 200px;}
 .sidenav li>a {color: #fff; font-weight: 100;}
+.row {margin-bottom: 0px;}
+.tabs {background-color: #212121;}
+.tabs .tab a {color: #fff;}
+.tabs .tab a:hover {color: #2dc7d0;}
+.tabs .tab a.active {color: #2dc7d0;}
+.tabs .indicator {background-color: #2dc7d0;}
 
 
 /* SOBRE NÓS */
@@ -73,3 +79,4 @@ nav i.material-icons {display: block; font-size: 24px; height: 94px; line-height
 .servicos h2:after {content: ''; display: block; width: 100px; border-top: 1px solid #2dc7d0; margin: 15px auto;}
 .servicos p {color: #fff; line-height: 1.8rem;}
 .servicos .p_card {color: #212121;}
+.servicos .btn-horario {margin-bottom: 20px;}
