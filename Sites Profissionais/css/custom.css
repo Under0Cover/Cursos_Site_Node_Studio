@@ -22,7 +22,7 @@ html, body {height: 100%;}
 
 /* MEDIA */
 @media only screen and (max-width: 480px) {
-    
+.card .card-image img {display: none;}
 }
 
 @media only screen and (min-width: 601px) {
@@ -47,11 +47,9 @@ html, body {height: 100%;}
 .nav-color {background-color: rgba(0, 0, 0, 0.7); transition: background 0.8s linear;}
 
 /* CUSTONS */
-nav {color: #fff; background-color: #ee6e73; width: 100%; height: 94px; line-height: 56px;}
-nav.nav-extended .nav-wrapper {min-height: 94px; height: auto;}
-.ul_menu {margin-top: 15px;}
-.navbar-fixed {position: absolute; height: 94px; z-index: 997;}
-nav i.material-icons {display: block; font-size: 24px; height: 94px; line-height: 94px;}
+nav.nav-extended .nav-wrapper {min-height: 94px;}
+.navbar-fixed {position: absolute; height: 94px;}
+nav, nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons, nav a.button-collapse i {height: 94px; line-height: 94px;}
 .sidenav {background: url(../img/footer_lodyas.png); width: 200px;}
 .sidenav li>a {color: #fff; font-weight: 100;}
 .row {margin-bottom: 0px;}
@@ -61,10 +59,13 @@ nav i.material-icons {display: block; font-size: 24px; height: 94px; line-height
 .tabs .tab a.active {color: #2dc7d0;}
 .tabs .indicator {background-color: #2dc7d0;}
 
+/* TÍTULO E PARAGRAFO */
+.titulo {font-size: 2rem; text-transform: uppercase;}
+.titulo::after {content: ''; display: block; width: 100px; border-top: 1px solid #2dc7d0; margin: 15px auto;}
+.paragrafo {line-height: 1.8rem;}
+
 /* SOBRE NÓS */
 .sobre {background-image: url('../img/textura1.png');}
-.sobre h2 {font-size: 2rem; color: #212121; text-transform: uppercase;}
-.sobre h2:after {content: ''; display: block; width: 100px; border-top: 1px solid #2dc7d0; margin: 15px auto;}
 .sobre p {line-height: 2.5rem; text-align: justify;}
 .sobre .missao {padding: 20px 0px; margin-top: 35px;}
 .sobre .missao .icon {color: #fff;}
@@ -74,14 +75,9 @@ nav i.material-icons {display: block; font-size: 24px; height: 94px; line-height
 
 /* SERVIÇOS */
 .servicos {background-image: url('../img/textura2.png');}
-.servicos h2 {font-size: 2rem; color: #fff; text-transform: uppercase;}
-.servicos h2:after {content: ''; display: block; width: 100px; border-top: 1px solid #2dc7d0; margin: 15px auto;}
-.servicos p {color: #fff; line-height: 1.8rem;}
 .servicos .p_card {color: #212121;}
 .servicos .btn-horario {margin-bottom: 20px;}
 
 /* UNIDADES */
 .unidades {background-image: url('../img/bg-unidades.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;}
-.unidades h2 {font-size: 2rem; color: #fff; text-transform: uppercase;}
-.unidades h2:after {content: ''; display: block; width: 100px; border-top: 1px solid #2dc7d0; margin: 15px auto;}
-.unidades p {color: #fff; line-height: 1.8rem;}
+.unidades article p {line-height: 1.8rem;}
