@@ -61,7 +61,6 @@ nav i.material-icons {display: block; font-size: 24px; height: 94px; line-height
 .tabs .tab a.active {color: #2dc7d0;}
 .tabs .indicator {background-color: #2dc7d0;}
 
-
 /* SOBRE NÓS */
 .sobre {background-image: url('../img/textura1.png');}
 .sobre h2 {font-size: 2rem; color: #212121; text-transform: uppercase;}
@@ -80,3 +79,9 @@ nav i.material-icons {display: block; font-size: 24px; height: 94px; line-height
 .servicos p {color: #fff; line-height: 1.8rem;}
 .servicos .p_card {color: #212121;}
 .servicos .btn-horario {margin-bottom: 20px;}
+
+/* UNIDADES */
+.unidades {background-image: url('../img/bg-unidades.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;}
+.unidades h2 {font-size: 2rem; color: #fff; text-transform: uppercase;}
+.unidades h2:after {content: ''; display: block; width: 100px; border-top: 1px solid #2dc7d0; margin: 15px auto;}
+.unidades p {color: #fff; line-height: 1.8rem;}
