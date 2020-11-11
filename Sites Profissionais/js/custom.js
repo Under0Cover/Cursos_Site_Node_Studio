@@ -15,6 +15,12 @@ $(document).ready(function () {
     $('.modal').modal();
     // TABS
     $('ul.tabs').tabs();
+    // AUTO PLAY CAROUSEL
+    function autoplay (){
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 5000);
+    }
+    autoplay()
 });
 
 /* SCRIPT PARA MUDAR FUNDO DO NAVBAR (CABEÇALHO/MENU) */
