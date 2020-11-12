@@ -81,3 +81,10 @@ nav, nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons, nav 
 /* UNIDADES */
 .unidades {background-image: url('../img/bg-unidades.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;}
 .unidades article p {line-height: 1.8rem;}
+
+/* CONTATO */
+.contato {background-image: url('../img/textura1.png');}
+.contato .mapa {min-height: 500px;}
+.contato .mapa iframe {width: 100%; min-height: 500px; border: none;}
+.contato .informacoes {background-image: url('../img/textura2.png'); min-height: 500px; padding: 30px;}
+.contato .informacoes h4 {font-size: 1.2rem; text-transform: uppercase; font-weight: 900;}
