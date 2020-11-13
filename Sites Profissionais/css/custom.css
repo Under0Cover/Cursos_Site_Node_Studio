@@ -87,4 +87,13 @@ nav, nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons, nav 
 .contato .mapa {min-height: 500px;}
 .contato .mapa iframe {width: 100%; min-height: 500px; border: none;}
 .contato .informacoes {background-image: url('../img/textura2.png'); min-height: 500px; padding: 30px;}
-.contato .informacoes h4 {font-size: 1.2rem; text-transform: uppercase; font-weight: 900;}
+.contato h4 {font-size: 1.2rem; text-transform: uppercase; font-weight: 900;}
+.contato .formulario {min-height: 500px; padding: 30px;}
+
+/* DEPOIMENTOS */
+.depoimentos .titulo::after {border-color: #fff;}
+.depoimentos img {width: 100px;}
+.depoimentos h4 {font-size: 1.2rem; font-weight: 600;}
+
+/* RODAPÉ */
+.rodape {background-image: url('../img/bg-rodape.jpg'); background-repeat: no-repeat; background-size: cover; padding: 30px 0;}
