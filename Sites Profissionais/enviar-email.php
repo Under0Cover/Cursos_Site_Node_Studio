@@ -4,7 +4,7 @@
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $assunto = $_POST['assunto'];
-$menssagem = $_POST['menssagem']
+$menssagem = $_POST['menssagem'];
 
 $headers = "Content-Type: text/html; charset=utf-8\r\n";
 $headers .= "From: $email\r\n";
@@ -21,6 +21,7 @@ $email_to = 'talis.oliveira@hotmail.com.br';
 
 // Enviando email
 $status = mail($email_to, mb_encode_mimeheader($assunto, "utf-8"), $corpo, $headers);
+// $status = true;
 
 // Status E-mail
 if ($status):
